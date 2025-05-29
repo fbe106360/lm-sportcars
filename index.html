@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, #8e44ad, #6c5ce7, #00cec9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Outfit', sans-serif;
-      color: white;
-      text-align: center;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coming Soon - LM Sportcars</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                font-family: "Outfit", sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #e01f20, #ffffff, #000000);
+                background-size: 200% 200%;
+                animation: gradientShift 10s ease infinite;
+                color: #ffffff;
+                text-align: center;
+            }
 
-    .container {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      padding: 60px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    }
+            @keyframes gradientShift {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin: 0;
-    }
+            .container {
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(10px);
+                padding: 60px 40px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                max-width: 550px;
+            }
 
-    p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-      margin-top: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Coming Soon</h1>
-    <p>We're working on something great. Stay tuned!</p>
-  </div>
-</body>
+            .logo {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 30px;
+                border-radius: 10%;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+                opacity: 0.9;
+            }
+
+            .button {
+                display: inline-block;
+                padding: 12px 30px;
+                background-color: white;
+                color: #e01f20;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background 0.3s;
+            }
+
+            .button:hover {
+                background-color: #f0f0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="logo.jpg" alt="LM Sportcars Logo" class="logo" />
+            <h1>Coming Soon</h1>
+            <p>
+                We’re working on something exciting at LM Sportcars. <br />Stay
+                tuned and come back soon!
+            </p>
+        </div>
+    </body>
 </html>
